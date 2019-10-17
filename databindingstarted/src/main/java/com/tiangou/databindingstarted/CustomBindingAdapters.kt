@@ -21,26 +21,10 @@ fun setImageResource(view: ImageView, imageUrl: Int) {
             .into(view)
 }
 
-@BindingAdapter("imageResource")
-fun setImageResource(view: ImageView, imageUrl: String) {
-
-    val context = view.getContext()
-
-    val option = RequestOptions()
-            .placeholder(R.drawable.ic_launcher_background)
-            .error(R.drawable.ic_launcher_background)
-
-    Glide.with(context)
-            .setDefaultRequestOptions(option)
-            .load(imageUrl)
-            .into(view)
-}
-
-//
 //@BindingAdapter("imageResource")
-//fun ImageView.setImageResource(imageUrl: String) {
+//fun setImageResource(view: ImageView, imageUrl: String) {
 //
-//    val context = this.context
+//    val context = view.getContext()
 //
 //    val option = RequestOptions()
 //            .placeholder(R.drawable.ic_launcher_background)
@@ -49,8 +33,24 @@ fun setImageResource(view: ImageView, imageUrl: String) {
 //    Glide.with(context)
 //            .setDefaultRequestOptions(option)
 //            .load(imageUrl)
-//            .into(this)
+//            .into(view)
 //}
+
+//
+@BindingAdapter("imageResource")
+fun ImageView.setImageResource(imageUrl: String) {
+
+    val context = this.context
+
+    val option = RequestOptions()
+            .placeholder(R.drawable.ic_launcher_background)
+            .error(R.drawable.ic_launcher_background)
+
+    Glide.with(context)
+            .setDefaultRequestOptions(option)
+            .load(imageUrl)
+            .into(this)
+}
 //
 //
 //@BindingAdapter("imageResource")

@@ -11,7 +11,8 @@ data class Product(
         var num_ratings: Int,
         var rating: BigDecimal,
         var serial_number: Int,
-        var quantity: String) {
+        var quantity: String,
+        var imageUrl: String) {
 
 
 
