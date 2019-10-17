@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tiangou.a1218test">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AnimationTest.Main16Activity">
+
+        </activity>
+        <activity android:name=".AnimationTest.Main15Activity">
+
+        </activity>
+        <activity android:name=".ViewTest.Main14Activity" />
+        <activity android:name=".Main13Activity" />
+        <activity android:name=".daggertest.Main12Activity" />
+        <activity android:name=".daggertest.Main11Activity"></activity>
+        <activity android:name=".butterknifetest.Main10Activity" />
+        <activity android:name=".zhujieTest.Main9Activity" />
+        <activity android:name=".OttoTest.Main8Activity" />
+        <activity android:name=".OttoTest.Main7Activity" />
+        <activity android:name=".EventBusTest.Main6Activity" />
+        <activity android:name=".startForResultTest.Main5Activity" />
+        <activity android:name=".startForResultTest.Main4Activity" />
+        <activity
+            android:name=".VideoTestAct"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".CardViewTestAct" />
+        <activity android:name=".NotificationTestActivity" />
+        <activity android:name=".RecyclerViewTestAct" />
+        <activity android:name=".ScrollColorChangeAct" />
+        <activity android:name=".TextViewTestActivity" />
+        <activity android:name=".scrollerTest.MainActivity" />
+        <activity android:name=".MainActivity" />
+
+        <service android:name=".MyService">
+            <intent-filter>
+                <action android:name="com.example.service" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
