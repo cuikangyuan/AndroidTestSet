@@ -1,1 +1,1 @@
-include ':app', ':processor', ':annotations', ':diffutiltest', ':intentdatatest', ':databindingstarted'
+include ':app', ':processor', ':annotations', ':diffutiltest', ':intentdatatest', ':databindingstarted', ':kotlincoroutinedemo'
